@@ -13,6 +13,7 @@ import { CreateEventComponent } from './events/create-event.component';
 import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 import { EventDetailsComponent } from './events/event-details/events-details.component';
 import { EventThumbnailComponent } from './events/event-thumbnail.component';
+import { EventListResolver } from './events/events-list-resolver.service';
 import { EventsListComponent } from './events/events-list.component'
 import { EventService } from './events/shared/event.service';
 import { NavBarComponent } from './nav/navbar.component';
@@ -37,6 +38,7 @@ import { NavBarComponent } from './nav/navbar.component';
     EventService,
     ToasterService,
     EventRouteActivator,
+    EventListResolver,
     { 
       provide: 'canDeactivateCreateEvent', 
       useValue: checkDirtyState 
